@@ -12,6 +12,12 @@ module.exports = {
       test: /\.js$/,
       exclude: /node_modules/
     }, {
+      test: /\.(pdf|png|jpg)$/, 
+      use: [ 
+        'file-loader'
+      ]
+    },
+     {
       test: /\.s?css$/,
       use: [
         'style-loader',

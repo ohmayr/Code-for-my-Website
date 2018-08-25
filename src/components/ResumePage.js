@@ -1,8 +1,13 @@
 import React from 'react';
+import { Document, Page } from 'react-pdf/dist/entry.webpack';
+import pdfDocument from '../../public/PDF/dummyPDF.pdf'
 
 const ResumePage = () => (
-  <div>
-    Need to include the resume on this page
+  <div className="resumePage">
+   <Document file={pdfDocument}>
+   <Page pageNumber={1}/>
+   <a href={pdfDocument} download>download a copy</a>
+   </Document>
   </div>
 );
 

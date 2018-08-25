@@ -10,8 +10,9 @@ import ResumePage from '../components/ResumePage';
 
 const AppRouter = () => (
   <BrowserRouter>
-    <div>
-      <Header />
+  <div>
+  <Header />
+  <div className="wholepage">
       <Switch>
         <Route path="/" component={HomePage} exact={true} />
         <Route path="/portfolio" component={PortfolioPage} exact={true} />
@@ -20,7 +21,8 @@ const AppRouter = () => (
         <Route path="/resume" component={ResumePage} />
         <Route component={NotFoundPage} />
       </Switch>
-    </div>
+   </div>
+      </div>
   </BrowserRouter>
 );
 
