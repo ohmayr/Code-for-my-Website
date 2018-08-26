@@ -20,6 +20,7 @@ const AppRouter = () => (
         <Route path="/contact" component={ContactPage} />
         <Route path="/resume" component={ResumePage} />
         <Route path='/Github' component={() => window.location = 'https://www.github.com/ohmayr'}/>
+        <Route path='/LinkedIn' component={() => window.location = 'https://www.linkedin.com/in/ohmayr'}/>
         <Route component={NotFoundPage} />
       </Switch>
    </div>

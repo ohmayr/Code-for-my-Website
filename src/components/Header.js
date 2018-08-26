@@ -14,6 +14,7 @@ const Header = () => (
     <NavLink to="/contact" activeClassName="is-active">Contact</NavLink>
     <NavLink to="/resume" activeClassName="is-active">Resume</NavLink>
     <NavLink to="/Github" activeClassName="is-active">Github</NavLink>
+    <NavLink to="/LinkedIn" activeClassName="is-active">LinkedIn</NavLink>
     </div>
     }>
     <section className="myLinks">
