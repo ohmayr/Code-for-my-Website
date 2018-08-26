@@ -2,16 +2,26 @@
 @import './base/base';
 
 h1 {
-    background-color: red;
+    background-color: darkslategray;
 
 }
 .listItems {
-    background-color: white;
+    background-color: rgba(0,225,255,0.5);
+    color: white;
     text-align: center;
     margin: 0;
     padding: 0.6%;
-    
+    top:0;
+    height:50px;
 }
+a {
+    color: white;
+    display: inline;
+    line-height: 3.333em;
+    padding: 0 10px 0 20px;
+    text-decoration: none;
+}
+
 .wholepage {
     background-color: transparent;
     height: 100%; 
@@ -19,10 +29,24 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-
+    padding-top:50px;
 }
 .resumePage {
     margin-left: auto;
     margin-right: auto;
-    width: 8em
+    width: 8rem;
+    position: relative;
+    padding-top:50px;
+}
+.pdfStyling { 
+    height: inherit;
+    width: inherit;
+    position: left;
+}
+.myLinks{
+    color: white;
+    display: block;
+    line-height: 3.333em;
+    padding: 0 10px 0 20px;
+    text-decoration: none;
 }

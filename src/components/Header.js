@@ -1,16 +1,25 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import 'react-sticky-header/styles.css';
+import StickyHeader from 'react-sticky-header';
+
+
 
 const Header = () => (
-  <header>
-    <h1>Personal Website</h1>
+    <StickyHeader
+    header={
     <div className="listItems">
-    <NavLink to="/" activeClassName="is-active" exact={true}><a>Home</a></NavLink>
-    <NavLink to="/portfolio" activeClassName="is-active" exact={true}><a>Portfolio</a></NavLink>
-    <NavLink to="/contact" activeClassName="is-active"><a>Contact</a></NavLink>
-    <NavLink to="/resume" activeClassName="is-active"><a>Resume</a></NavLink>
+    <NavLink to="/" activeClassName="is-active" exact={true}>Home</NavLink>
+    <NavLink to="/portfolio" activeClassName="is-active" exact={true}>Portfolio</NavLink>
+    <NavLink to="/contact" activeClassName="is-active">Contact</NavLink>
+    <NavLink to="/resume" activeClassName="is-active">Resume</NavLink>
     </div>
-    </header>
+    }>
+    <section className="myLinks">
+    <a>Github Link</a>
+    <a>LinkedIn Link</a>
+    </section>
+    </StickyHeader>
 );
 
 export default Header;
