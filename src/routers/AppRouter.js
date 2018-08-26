@@ -19,6 +19,7 @@ const AppRouter = () => (
         <Route path="/portfolio/:id" component={PortfolioItemPage} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/resume" component={ResumePage} />
+        <Route path='/Github' component={() => window.location = 'https://www.github.com/ohmayr'}/>
         <Route component={NotFoundPage} />
       </Switch>
    </div>
